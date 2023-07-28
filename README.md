@@ -19,6 +19,9 @@ conda activate 3D-RoomGen
 
 5. Create another folder containing just the images of the models:
 ```python
+import os
+import shutil
+
 models_dir = "Your Models Dir"
 model_images_dir = "Your Model Images Dir"
 for i, model in enumerate(model for model in os.listdir(models_dir) if os.path.isdir(model)):
