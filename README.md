@@ -30,10 +30,10 @@ for i, model in enumerate(model for model in os.listdir(models_dir) if os.path.i
 7. Edit the constants.py file: Add models dir, model images dir and your OpenAI api key
 
 8. Run Either the main file or the main-random file:
-```python
+```bash
 python main.py
 ```
 OR
-```python
+```bash
 python main-random.py
 ```
