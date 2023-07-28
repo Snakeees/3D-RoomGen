@@ -22,15 +22,15 @@ conda activate 3D-RoomGen
 import os
 import shutil
 
-models_dir = "Your Models Dir"
-model_images_dir = "Your Model Images Dir"
+models_dir = "Your/Models/Dir/" #Eg - "C:/3D-FUTURE-model/"
+model_images_dir = "Your/Model/Images/Dir/" #Eg - "C:/3D-FUTURE-model-image/", create the empty dir before running the code
 for i, model in enumerate(model for model in os.listdir(models_dir) if os.path.isdir(model)):
     input_image_path = os.path.join(models_dir,model+"/image.jpg")
     output_image_path = os.path.join(model_images_dir, model+".jpg")
     shutil.copy(input_image_path,output_image_path)
     print(i+1)
 ```
-7. Edit the constants.py file: Add models dir, model images dir and your OpenAI api key
+7. Edit the constants.py file: Add models dir, model images dir, and your OpenAI API key
 
 8. Run Either the main file or the main-random file:
 ```bash
